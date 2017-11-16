@@ -1,6 +1,7 @@
 package edu.illinois.techdemonstration;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
-import edu.illinois.techdemonstration.App.Authentication;
+import edu.illinois.techdemonstration.Parse.Authentication;
+import edu.illinois.techdemonstration.Parse.Categories;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,9 +69,11 @@ public class MainActivity extends AppCompatActivity {
                 if(dataSnapshot.child(registeredUserName).exists()) {
                     if(!registeredUserName.isEmpty()) {
                         Authentication signIn = dataSnapshot.child(registeredUserName).getValue(Authentication.class);
-                        if(signIn.getPassword().equals(registeredPassword))
-                            Toast.makeText(MainActivity.this, "Sign in successful", Toast.LENGTH_SHORT).show();
-                        else
+                        if(signIn.getPassword().equals(registeredPassword)) {
+                            Intent categoryScreen = new Intent(MainActivity.this, CategoriesScreen.class);
+                            startActivity(categoryScreen);
+                            finish();
+                        } else
                             Toast.makeText(MainActivity.this, "Wrong password. Try again", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(MainActivity.this, "Enter user name and password", Toast.LENGTH_SHORT).show();

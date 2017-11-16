@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.illinois.techdemonstration.CategoriesScreen">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation_view"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/navigation_colors"
+        app:itemTextColor="@drawable/navigation_colors"
+        app:menu="@menu/navigation_menu"
+        tools:layout_editor_absoluteY="33dp"
+        tools:layout_editor_absoluteX="221dp" />
+</RelativeLayout>
