@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1049544229584",
+    "firebase_url": "https://quizapp-9a13c.firebaseio.com",
+    "project_id": "quizapp-9a13c",
+    "storage_bucket": "quizapp-9a13c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049544229584:android:8c3c92acc5929740",
+        "android_client_info": {
+          "package_name": "edu.illinois.techdemonstration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049544229584-281acp2fra379rmv9qdso6juegraored.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.illinois.techdemonstration",
+            "certificate_hash": "6684c31072eda2e6beb3944bf44ee075cb23852d"
+          }
+        },
+        {
+          "client_id": "1049544229584-pmigulutkjbronoc6j25gr5e60fdo37n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLdPi8H5H0RO6ne5IXnKr0NwyDCSOCCqw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049544229584-pmigulutkjbronoc6j25gr5e60fdo37n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
